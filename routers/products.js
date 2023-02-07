@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const auth = require("../middelwares/AuthMWPermission")
 const controller = require("../controllers/productsController");
 
 
@@ -14,14 +15,14 @@ router.get("/:id", controller.getProductById)
 
 // add new product
 
-router.post("/", controller.addProduct)
+router.post("/", auth, controller.addProduct)
 
 // update product
-router.put("/:id", controller.updateProduct)
+router.put("/:id", auth, controller.updateProduct)
 
 
 // delete product by id
-router.delete("/:id", controller.deleteProductById)
+router.delete("/:id", auth, controller.deleteProductById)
 
 
 module.exports = router;
