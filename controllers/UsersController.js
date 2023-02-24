@@ -26,7 +26,7 @@ let addUser = async (req, res) => {
                 email:req.body.email,
                 name:req.body.name,
                 password:hashedPswd,
-                isAdmin:req.body.isAdmin
+                isAdmin:req.body.isAdmin || false
             })
             await user.save().then(() => console.log("user added"));
             res.status(200).send("ok");
