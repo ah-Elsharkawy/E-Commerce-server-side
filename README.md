@@ -15,7 +15,7 @@ basic E_Commerce app that implements CRUD operations, authentication and authori
 
 * [NodeJS](https://nodejs.org/en/download)
 * [MongoDB](https://www.mongodb.com/try/download/community)
-* express and other dependecies can be installed using:
+* Express and other dependecies can be installed using:
 
 ```text
 npm install
