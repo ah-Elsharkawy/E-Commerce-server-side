@@ -2,7 +2,7 @@
 
 ## Overview
 
-basic E_Commerce app that implements CRUD operations, authentication and authorization. This app provides RESTful endpoints for clients to access the resources.
+basic E_Commerce app that implements CRUD operations, authentication and authorization.
 
 ## Technologies Used
 
@@ -15,7 +15,11 @@ basic E_Commerce app that implements CRUD operations, authentication and authori
 
 * [NodeJS](https://nodejs.org/en/download)
 * [MongoDB](https://www.mongodb.com/try/download/community)
-* express and other dependecies can be installed using `npm install`
+* express and other dependecies can be installed using:
+
+```text
+npm install
+```
 
 ```json
 "dependencies": {
