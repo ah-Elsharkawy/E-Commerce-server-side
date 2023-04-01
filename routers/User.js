@@ -4,10 +4,7 @@ const controller = require("../controllers/UsersController")
 
 
 //registration 
-router.post('/', controller.addUser)
-
-
-
+router.post('/register', controller.addUser)
 
 
 module.exports = router;

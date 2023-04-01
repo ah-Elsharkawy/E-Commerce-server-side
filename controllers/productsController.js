@@ -48,8 +48,7 @@ let deleteProductById = async (req, res) =>{
     }
     catch(err){
         res.send(err);
-    }
-    
+    } 
 }
 
 let addProduct = async (req, res) =>{

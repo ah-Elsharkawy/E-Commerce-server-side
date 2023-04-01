@@ -14,6 +14,7 @@ mongoose.set('strictQuery', true);
 mongoose.connect(process.env.MONGO_URI).then(()=> {console.log("connected to the database ...")}).catch((e)=>{console.log(e)});
 
 // using cors to allow some or all origins access to the server and define access methods
+
 // here we allow all origins and all methods 
 app.use(cors({
     // exposing custom header so that client can access it

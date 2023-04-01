@@ -1,6 +1,7 @@
 const Ajv = require('ajv');
 const ajv = new Ajv();
 
+// Authentication(Login) schema
 const schema = {
     "type": "object",
     "properties": {

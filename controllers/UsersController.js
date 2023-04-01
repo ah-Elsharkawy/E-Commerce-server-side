@@ -3,11 +3,11 @@ const valid = require("../util/UsersValidator")
 const User = require("../models/UserModel");
 const bcrypt = require("bcrypt")
 
+
 let addUser = async (req, res) => {
     console.log("user recieved ... ")
     if(valid(req.body)){
         
-
         try{
             
             // check if user exists
